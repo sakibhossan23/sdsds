@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/bdfb6e9a76.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Summer Sale !!</title>
+</head>
+
+<body>
+    <header class="h-[100vh] bg-[#F9F6E2]">
+        <section class="container mx-auto ">
+            <div class="flex-row lg:flex justify-center  items-center">
+                <div class="lg:w-[50%] w-full mx-auto text-center">
+                    <h6 class="text-[#111] text-4xl font-medium text-center">---SALE FEVER---</h6>
+                    <h4 class="text-[#111] text-3xl lg:text-6xl font-bold text-center my-14">Purchase TK 200 or above & get <span
+                            class="text-[#E527B2]">20% off</span></h4>
+                    <h5 class="text-center">
+                        <span class="text-[#111] text-2xl font-medium">Use Promo Code</span>
+                        <span class="bg-[#E527B2] py-3 px-6 text-white font-semibold text-2xl rounded-lg">SELL200</span>
+                    </h5>
+                </div>
+                <div class="lg:w-[50%] w-full" >
+                    <img class="w-full" src="images/Summer 1.png" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="bg-[#f8f8f8]">
+        <!-- card section -->
+        <section class="container mx-auto py-12">
+            <!-- Cards -->
+            <div class="flex-row lg:flex items-start gap-5">
+                <div>
+                    <h1 class="text-[#111] text-4xl font-semibold my-10">Kitchenware</h1>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Card 1 -->
+                        <div class="card bg-base-100 shadow-md bg-white pb-3 rounded-2xl" onclick="setTotal(this)">
+                            <figure class="px-5 pt-7">
+                                <img class="rounded-xl mx-auto bg-[#1111110D] px-20 mb-5 py-7"
+                                    src="/images/prod1.png" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating text-yellow-400 text-xl">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <h2 id="card-1" class="card-title text-[#111] text-2xl font-semibold">K. Accessories
+                                </h2>
+                                <p class="text-[#11111180] text-2xl font-normal"><span id="price1">39.00</span>TK</p>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div onclick="setTotal(this)" class="card bg-base-100 shadow-md bg-white pb-3 rounded-2xl">
+                            <figure class="px-5 pt-7">
+                                <img class="rounded-xl mx-auto bg-[#1111110D] px-20 mb-4 py-11"
+                                    src="/images/prod2.png" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating text-yellow-400 text-xl">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <h2 id="card-2" class="card-title text-[#111] text-2xl font-semibold">K. Accessories
+                                </h2>
+                                <p class="text-[#11111180] text-2xl font-normal"><span>25.00</span>TK</p>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div onclick="setTotal(this)" class="card bg-base-100 shadow-md bg-white pb-3 rounded-2xl">
+                            <figure class="px-5 pt-7">
+                                <img class="rounded-xl mx-auto bg-[#1111110D] px-20 mb-5 py-11"
+                                    src="/images/prod3.png" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating text-yellow-400 text-xl">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <h2 id="card-3" class="card-title text-[#111] text-2xl font-semibold">K. Home Cooker
+                                </h2>
+                                <p class="text-[#11111180] text-2xl font-normal"><span>49.00</span>TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second Card -->
+                    <div>
+                        <h1 class="text-[#111] text-4xl font-semibold my-10">Sportswear</h1>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Card 4 -->
+                            <div onclick="setTotal(this)" class="card bg-base-100 shadow-md bg-white pb-3 rounded-2xl">
+                                <figure class="px-5 pt-7">
+                                    <img class="rounded-xl mx-auto bg-[#1111110D] px-20 mb-5 py-12"
+                                        src="/images/prod4.png" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <div class="rating text-yellow-400 text-xl">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <h2 id="card-4" class="card-title text-[#111] text-2xl font-semibold">Sports Back
+                                        Cap</h2>
+                                    <p class="text-[#11111180] text-2xl font-normal"><span>49.00</span>TK</p>
+                                </div>
+                            </div>
+                            <!-- Card 5 -->
+                            <div onclick="setTotal(this)" class="card bg-base-100 shadow-md bg-white pb-3 rounded-2xl">
+                                <figure class="px-5 pt-7">
+                                    <img class="rounded-xl mx-auto bg-[#1111110D] px-20 mb-5 py-7"
+                                        src="/images/prod5.png" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <div class="rating text-yellow-400 text-xl">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <h2 id="card-5" class="card-title text-[#111] text-2xl font-semibold">Full Jersey
+                                        Set</h2>
+                                    <p class="text-[#11111180] text-2xl font-normal"><span>69.00</span>TK</p>
+                                </div>
+                            </div>
+                            <!-- Card 6 -->
+                            <div onclick="setTotal(this)" class="card bg-base-100 shadow-md bg-white pb-3 rounded-2xl">
+                                <figure class="px-5 pt-7">
+                                    <img class="rounded-xl mx-auto bg-[#1111110D] px-20 mb-5 py-10"
+                                        src="/images/prod6.png" />
+                                </figure>
+                                <div class="card-body items-center text-center spac-y-4">
+                                    <div class="rating text-yellow-400 text-xl">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <h2 id="card-6" class="card-title text-[#111] text-2xl font-semibold">Sports cates
+                                    </h2>
+                                    <p class="text-[#11111180] text-2xl font-normal"><span>149.00</span>TK</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- cart  -->
+                <div class="my-28">
+                    <!-- Coupon -->
+                    <div class="my-2">
+                        <div class="bg-white rounded-lg p-8 ml-2">
+                            <div class="space-y-4 my-5">
+                                <h1 class="text-2xl font-medium text-[#111] text-center">Have Coupon?</h1>
+                                <div class="flex justify-center">
+                                    <input
+                                        class="border-r-0 border-[#11111180] py-4 px-2 border-2 rounded-tl-lg rounded-bl-lg"
+                                        type="text" name="" id="coupon-field" placeholder="Coupon Code">
+                                    <button disabled id="coupon-button"
+                                          class="text-white text-2xl font-medium bg-[#E527B2] disabled:bg-gray-300 py-4 px-6 rounded-tr-lg rounded-br-lg">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white">
+                            <div class="my-5 mx-8 rounded-lg">
+                                <ul id="item-list" class="list-decimal mx-6">
+
+                                </ul>
+                            </div>
+                            <hr>
+                            <div id="" class="my-5 mx-8 space-y-7">
+                                <h3 class="text-[#111] text-2xl font-medium">Total Price : <span id="total-price"
+                                        class="text-[#11111180]">00.00</span><span class="text-[#11111180]">TK</span>
+                                </h3>
+                                <h3 class="text-[#111] text-2xl font-medium">Discount : <span id="discount"
+                                        class="text-[#11111180]">00.00</span><span class="text-[#11111180]">TK</span>
+                                </h3>
+                                <h3 class="text-[#111] text-2xl font-medium">Total : <span id="total"
+                                        class="text-[#11111180]">00.00</span><span class="text-[#11111180]">TK</span>
+                                </h3>
+                                <hr>
+                                <!-- Open the modal using ID.showModal() method -->
+                                <button disabled id="purchase-button"
+                                    class="btn text-white text-2xl font-medium disabled:bg-gray-300 bg-[#E527B2] py-4 px-6 rounded-lg w-full"
+                                    onclick="my_modal_5.showModal()">Make Purchase</button>
+                                <div class="my-8">
+                                    <dialog id="my_modal_5" class="rounded-xl modal modal-bottom sm:modal-middle">
+                                        <form method="dialog" class="modal-box">
+                                            <div class="modal-action p-20">
+                                                <!-- if there is a button in form, it will close the modal -->
+                                                <img class="text-center mx-auto" src="images/congo.png" alt="">
+                                                <h1 class="  my-5 text-center text-5xl font-bold text-[#111]">Congratulations</h1>
+                                                <h4 class="  my-5 text-center text-xl text-gray-400 font-normal">Your Purchase the product</h4>
+                                                <div class="w-full text-center my-5">
+                                                    <button onclick="locationId()" class="btn rounded-xl bg-[#E527B2] text-white py-3 px-5 mx-auto">Go Home</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </dialog>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/purchase.js"></script>
+</body>
+
+</html>
